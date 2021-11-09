@@ -1,0 +1,12 @@
+{
+  "name": "realworld-api-sqlite3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.13.0",
+    "sqlite3": "^5.0.2"
+  }
+}
