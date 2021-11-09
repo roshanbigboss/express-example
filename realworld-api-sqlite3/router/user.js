@@ -15,6 +15,6 @@ router.post(
 );
 
 // 登录
-router.post("/login", userController.login);
+router.post("/login", userValidator.login, userController.login);
 
 module.exports = router;

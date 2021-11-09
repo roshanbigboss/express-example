@@ -14,7 +14,7 @@ exports.findByUsername = async (username) => {
   await db.open(path.resolve(__dirname, "../db/realworld.db"));
   const result = await db.run(ceateTalbeSQL);
   const user = await db.get(
-    "select username,email from users where username = ?",
+    "select username,email,password from users where username = ?",
     [username]
   );
   // db.close();
@@ -24,7 +24,7 @@ exports.findByEmail = async (email) => {
   await db.open(path.resolve(__dirname, "../db/realworld.db"));
   const result = await db.run(ceateTalbeSQL);
   const user = await db.get(
-    "select username,email from users where email = ?",
+    "select username,email,password from users where email = ?",
     [email]
   );
   // db.close();
